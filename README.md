@@ -1,4 +1,4 @@
-Download scrambler.py and run python scrambler.py.
+Download `scrambler.py` and run `python scrambler.py`.
 
 Follow prompt (make sure you have the right path to your image) and voila!
 
