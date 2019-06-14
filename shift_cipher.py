@@ -8,11 +8,9 @@ def main():
     im = Image.open(path, 'r')
     pix_val = list(im.getdata())
     shift = list(map(int, input("Shift vector in form R G B: ").split()))
-    for i in range(len(pix_val)):
-        pix_val[i] = tuple(
-            np.mod(list(np.add(pix_val[i], shift)), [256, 256, 256]))
+    pix_val = np.mod(np.add(pix_val, shift), [256, 256, 256])
     new_im = Image.new(im.mode, im.size)
-    new_im.putdata(pix_val)
+    new_im.putdata(list(map(tuple, pix_val)))
     new_im.show()
 
 
