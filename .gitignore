@@ -2,4 +2,5 @@
 *.jpeg
 *.png
 *.gif
+*.pyc
 matt.py
