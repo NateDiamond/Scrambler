@@ -5,3 +5,5 @@ Follow prompt (make sure you have the right path to your image) and voila!
 Similar instructions for `shift_cipher.py`, though now you have an extra prompt! Make sure you only enter three numbers in the range 0-255, separated by spaces.
 
 Also, make sure image is in the same directory. No guarantees it will work otherwise. Look into PIL library to see how paths are handled.
+
+Files `blur.py` and `gradient.py` blur out an entire image, just in different fashions, whereas `cv_blur.py` detects faces and blurs those out in the style of `blur.py.`
